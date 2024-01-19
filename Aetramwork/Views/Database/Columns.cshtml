@@ -1,0 +1,10 @@
+﻿
+@model List<string>
+
+<h2>Columns for @ViewBag.TableName</h2>
+<ul>
+    @foreach (var columnName in Model)
+    {
+        <li>@columnName</li>
+    }
+</ul>

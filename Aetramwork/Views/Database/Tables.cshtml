@@ -1,0 +1,9 @@
+﻿
+@model List<string>
+
+<ul>
+    @foreach (var tableName in Model)
+    {
+        <li><a asp-controller="Database" asp-action="Columns" asp-route-tableName="@tableName">@tableName</a></li>
+    }
+</ul>
